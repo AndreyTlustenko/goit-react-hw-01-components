@@ -1,0 +1,19 @@
+.transHistory{
+    display: flex;
+    border: 1px solid rgba(9, 9, 9, 0.372);
+flex-direction: column;
+}
+tbody{
+    background-color: rgba(98, 74, 13, 0.129);
+}
+tr{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(151, 98, 98);
+
+}
+td{
+   width: 200px;
+   margin-left: 20px;
+   color: rgb(84, 36, 25);
+}

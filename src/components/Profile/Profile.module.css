@@ -1,0 +1,37 @@
+.profile{
+    width: 250px;
+
+    font-size: 18px;
+    background-color: rgb(255, 249, 242);
+    border-radius: 10px;
+    border-color: rgb(190, 159, 6);
+    
+}
+.description{
+    padding: 20px 20px;
+    text-align: center;
+
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    
+    text-align: center;
+    border: 4px solid rgb(19, 246, 159);
+}
+.name{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(224, 191, 203);
+}
+.stats{
+    display: flex;
+    padding-left: 10px;
+    border-color: black;
+    border-radius: 20%;
+}
+li{
+    display: flex;
+   
+    flex-wrap: wrap
+}

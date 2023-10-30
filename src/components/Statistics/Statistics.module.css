@@ -1,0 +1,17 @@
+.statList{
+    display: flex;
+    background-color: rgba(16, 75, 52, 0.298);
+    padding: 0;
+}
+.item{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    border: 1px solid rgb(98, 35, 35);
+}
+.title{
+    text-align: center;
+    color: black;
+}
