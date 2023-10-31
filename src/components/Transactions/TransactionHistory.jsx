@@ -1,17 +1,16 @@
-import style from '../Transactions/Transaction.module.css'; 
-import  PropTypes  from 'prop-types';
-
+import style from '../Transactions/Transaction.module.css';
+import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
   return (
-<table key={items.id} className={style.transHistory}>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
+    <table key={items.id} className={style.transHistory}>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
           <th>Currency</th>
-    </tr>
-  </thead>
+        </tr>
+      </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
@@ -22,17 +21,18 @@ export const TransactionHistory = ({ items }) => {
             </tr>
           );
         })}
-      </tbody> 
-</table>
-  )
-}
+      </tbody>
+    </table>
+  );
+};
 
 TransactionHistory.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.exact({
-    id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-
-  }))
-}
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};
